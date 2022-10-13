@@ -1,4 +1,4 @@
- <?php
+  <?php
 
   if(isset($_POST['submit'])){
 
@@ -126,7 +126,7 @@
                 </div>
   
             
-                <input value="Sign In" type="submit" class="btn btn-primary" name="submit" id="submit"></input>
+                <input  value="Sign In" type="submit" class="btn btn-primary" name="submit" id="submit"></input>
 
                 <article>
                   <div class="continue">
@@ -144,8 +144,6 @@
         </main>
 
 
-
-        
 
         <script src="validacao.js"></script>
 </body>

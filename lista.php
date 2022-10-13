@@ -59,9 +59,13 @@ td div{
     background: none;
 }
 
-#x1{
-    background-color: red;
-}
+.box-search{
+            display: flex;
+            justify-content: center;
+            gap: .1%;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
 </style>
 
 <body>

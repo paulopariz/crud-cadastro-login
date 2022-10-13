@@ -20,6 +20,7 @@ function nameValidate(){
   if(campos[0].value.length < 3)
   {
     setError(0);
+
   }
   else{
     removeError(0);

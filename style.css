@@ -320,3 +320,85 @@ body.dark{
 .dark #signInNav:hover{
     background-color: rgba(242, 239, 239, 0.718);
 }
+
+
+/* REPONSIVIDADE MOBILE*/
+
+@media(max-width: 700px) {
+    .nav:nth-child(1), #logInNav, #signInNav{
+        display: none;
+    }
+    nav{
+        margin-top: 15px;
+    }
+    .nav:nth-child(2){
+        margin-left: 220px;
+    }
+
+    main{
+        display: block;
+        max-width: 313px;
+        margin: auto;
+        margin-top: 0;
+    }
+    section{
+        position: relative;
+    }
+    section h1{
+        font-size: 24px;
+        width: 316px;
+        letter-spacing: 0;
+    }
+    section p {
+        font-size: 17px ;
+        text-align: end;
+    }
+    input{
+        width: 313px;
+    }
+
+    .character img{
+        display: none;
+    }
+    form{
+        margin-top: 20px;
+    }
+
+    .eclipse1{
+        margin-top: 240px;
+        margin-left: -110px;
+        position: fixed;
+    }
+    .eclipse2{
+        position: fixed;
+        margin-top: 395px;
+        margin-left: 110px;
+    }
+
+    .continue p {
+        font-size: 10px;
+        margin-top: 9px;
+    }
+
+    article > section img{
+        padding: 10px 34px;
+    }
+    .label{
+        padding: 5px;
+        height: 16px;
+        width: 42px;
+    }
+    .bi-brightness-high, .bi-moon{
+        font-size: 10px;
+    }
+
+    .checkbox:checked + .label .ball {
+        transform: translateX(25px);
+    }
+    .label .ball{
+        top: 1px;
+        left: 2px;
+        height: 14px;
+        width: 14px;
+    }
+}
