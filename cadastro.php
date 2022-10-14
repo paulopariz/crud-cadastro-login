@@ -1,4 +1,4 @@
- <?php
+  <?php
 
   if(isset($_POST['submit'])){
 
@@ -15,7 +15,7 @@
 
   }
 
-?>     
+?>      
 
 
 
@@ -61,10 +61,10 @@
           <ul class="nav">
             
               <li class="nav-item" >
-                <a class="nav-link" id="logInNav" href="#">Log in</a>
+                <a class="nav-link" id="logInNav" href="#">Sign in</a>
               </li>
-              <li class="nav-item" id="signInNav">
-                <a class="nav-link" href="#">Sign in</a>
+              <li class="nav-item" id="signUpNav">
+                <a class="nav-link" href="cadastro.php" target="_blank">Sign up</a>
               </li>
               <div>
                 <input type="checkbox" class="checkbox x2" id="chk" />
@@ -100,33 +100,33 @@
 
             <form id="form" action="cadastro.php" method="POST">
             <div class="form-group">
-                  <input type="text" placeholder="Name" name="nome" class="inputs required" oninput="nameValidate()" value="<?php echo $nome; ?>">  
+                  <input type="text" placeholder="Name" name="nome" class="inputs required" oninput="nameValidate()" id="input_nome" value="<?php echo $nome; ?>">  
                   <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>            
                 </div>
                 <div class="form-group">
-                  <input class="inputs required" placeholder="E-mail" oninput="emailValidate()" type="text" name="email" value="<?php echo $email; ?>">
+                  <input class="inputs required" placeholder="E-mail" oninput="emailValidate()" type="email" name="email" value="<?php echo $email; ?>">
                   <span class="span-required" >Digite um email válido</span>           
                 </div>
                 <div class="form-group">
-                  <input class="inputs required" placeholder="Phone" oninput="telValidate()" type="tel" name="telefone" value="<?php echo $telefone; ?>">
+                  <label for="phone"><input class="inputs required" placeholder="Phone" oninput="telValidate()" type="tel" name="telefone" value="<?php echo $telefone; ?>"></label>
                   <span class="span-required" >Digite um número de telefone válido</span>           
   
   
                 </div> 
                 <div class="form-group">
-                  <input class="inputs required" placeholder="Password" oninput="mainPasswordValidate()" type="text" name="senha" value="<?php echo $senha; ?>"> 
+                  <input class="inputs required" placeholder="Password" oninput="mainPasswordValidate()" type="password" name="senha" value="<?php echo $senha; ?>"> 
                   <span class="span-required" >Digite uma senha com no mínimo 8 caracteres</span>           
                
                 </div>
   
                 <div class="form-group">
-                  <input class="inputs required" placeholder="Confirm password" oninput="comparePassword()" type="text" name="senha">    
+                  <input class="inputs required" placeholder="Confirm password" oninput="comparePassword()" type="password" name="senha">    
                   <span class="span-required">Senhas devem ser compatíveis</span>           
             
                 </div>
   
             
-                <input  value="Sign In" type="submit" class="btn btn-primary" name="submit" id="submit"></input>
+                <input value="Sign Up" type="submit" class="btn btn-primary" name="submit" id="submit" ></input>
 
                 <article>
                   <div class="continue">

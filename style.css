@@ -30,9 +30,10 @@ nav{
     content: '';
     position: absolute;
     background-color: #4461F2;
-    width: 48px;
+    width: 59px;
     height: 2px;
-    margin-top: 28px;
+    margin-top: 27px;
+    margin-left: -2px;
     animation: scale-in-hor-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
@@ -49,17 +50,20 @@ nav{
         }
       }
 
-#signInNav{
-    background-color: white;
-    border-radius: 21px;
-    box-shadow: 1px 4px 5px 1px #7671711f;
-    transition: 0.3s;
+#signUpNav::before{
+    content: '';
+    position: absolute;
+    background-color: #4461F2;
+    width: 65px;
+    height: 2px;
+    margin-top: 35px;
+    margin-left: 15px;
 }
-#signInNav a{
+#signUpNav a{
     color: #4461F2;
 }
 
-#signInNav:hover{
+#signUpNav:hover{
     background-color: rgba(242, 239, 239, 0.293);
 }
 
@@ -309,7 +313,7 @@ body.dark{
     background-color: white;
 }
 
-.dark #signInNav a{
+.dark #signUpNav a{
     color: #14162E;
 }
 
@@ -317,8 +321,8 @@ body.dark{
     color: #4461F2;
 }
 
-.dark #signInNav:hover{
-    background-color: rgba(242, 239, 239, 0.718);
+.dark #signUpNav{
+    color: white;
 }
 
 
@@ -353,7 +357,7 @@ body.dark{
 /* REPONSIVIDADE MOBILE*/
 
 @media(max-width: 700px) {
-    .nav:nth-child(1), #logInNav, #signInNav{
+    .nav:nth-child(1), #logInNav, #signUpNav{
         display: none;
     }
     nav{
@@ -429,4 +433,13 @@ body.dark{
         height: 14px;
         width: 14px;
     }
+}
+
+
+.sucesso{
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    background-color: green;
+    display: none;
 }

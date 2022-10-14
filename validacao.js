@@ -3,6 +3,8 @@ const campos = document.querySelectorAll('.required');
 const spans = document.querySelectorAll('.span-required');
 const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 
+document.getElementById("submit").disabled = true;
+
 
 
 
@@ -20,10 +22,13 @@ function nameValidate(){
   if(campos[0].value.length < 3)
   {
     setError(0);
+    document.getElementById("submit").disabled = true;
+
 
   }
   else{
     removeError(0);
+
   }
 }
 
@@ -32,6 +37,8 @@ function emailValidate(){
   if(!emailRegex.test(campos[1].value))
   {
     setError(1);
+    document.getElementById("submit").disabled = true;
+
   }
   else
   {
@@ -44,6 +51,8 @@ function telValidate(){
   if(campos[2].value.length < 11)
   {
     setError(2);
+    document.getElementById("submit").disabled = true;
+
   }
   else{
     removeError(2);
@@ -54,6 +63,7 @@ function mainPasswordValidate(){
   if(campos[3].value.length < 8)
   {
     setError(3);
+    document.getElementById("submit").disabled = true;
   }
   else{
     removeError(3);
@@ -65,10 +75,18 @@ function comparePassword(){
   if(campos[3].value == campos[4].value && campos[4].value.length >= 8)
   {
     removeError(4);
+    document.getElementById("submit").disabled = false;
+    document.getElementById("submit").style.backgroundColor = '#42ee69';
+
+
   }
   else
   {
     setError(4);
+    document.getElementById("submit").disabled = true;
+    document.getElementById("submit").style.backgroundColor = '#4461F2';
+
+
   }
 }
   
@@ -80,6 +98,8 @@ chk.addEventListener('change', () => {
   document.body.classList.toggle('dark')
 
 });
+
+
 
 
 

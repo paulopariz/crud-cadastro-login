@@ -113,9 +113,10 @@ else
 }
 
 #submit{
-  background: #0ea60e;
+  background: #4461F2;
   color: white;
   cursor: pointer;
+  padding: 0;
 }
   span{
     display: none;
@@ -138,7 +139,7 @@ else
                     <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
                   </div>
                   <div class="form-group">
-                    <input placeholder="E-mail" class="inputs required" oninput="emailValidate()" type="text" name="email" value="<?php echo $email; ?>">
+                    <input placeholder="E-mail" class="inputs required" oninput="emailValidate()" type="email" name="email" value="<?php echo $email; ?>">
                     <span class="span-required" >Digite um email válido</span>
                   </div>
                   <div class="form-group">
@@ -146,11 +147,11 @@ else
                     <span class="span-required" >Digite um número de telefone válido</span>
                   </div>
                   <div class="form-group">
-                    <input placeholder="Senha" class="inputs required" oninput="mainPasswordValidate()" type="text" name="senha" value="<?php echo $senha; ?>">
+                    <input placeholder="Senha" class="inputs required" oninput="mainPasswordValidate()" type="password" name="senha" value="<?php echo $senha; ?>">
                     <span class="span-required" >Digite uma senha com no mínimo 8 caracteres</span>
                   </div>
                   <div class="form-group">
-                    <input placeholder="Confirme a senha" class="inputs required" oninput="comparePassword()" type="text" name="senha">
+                    <input placeholder="Confirme a senha" class="inputs required" oninput="comparePassword()" type="password" name="senha">
                     <span class="span-required" >Senhas devem ser compatíveis</span>
                   </div>
               
