@@ -135,23 +135,23 @@ else
             <h1>Editar usuário</h1>
 
               <div class="form-group">
-                    <input placeholder="Nome" type="text" name="nome" class="inputs required" oninput="nameValidate()" value="<?php echo $nome; ?>">
+                    <input placeholder="Nome" type="text" name="nome" class="inputs required" oninput="validarName()" value="<?php echo $nome; ?>">
                     <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
                   </div>
                   <div class="form-group">
-                    <input placeholder="E-mail" class="inputs required" oninput="emailValidate()" type="email" name="email" value="<?php echo $email; ?>">
+                    <input placeholder="E-mail" class="inputs required" oninput="validarEmail()" type="email" name="email" value="<?php echo $email; ?>">
                     <span class="span-required" >Digite um email válido</span>
                   </div>
                   <div class="form-group">
-                    <input placeholder="telefone" class="inputs required" oninput="telValidate()" type="tel" name="telefone" value="<?php echo $telefone; ?>">
+                    <input placeholder="telefone" class="inputs required" oninput="validarTel()" type="tel" name="telefone" value="<?php echo $telefone; ?>">
                     <span class="span-required" >Digite um número de telefone válido</span>
                   </div>
                   <div class="form-group">
-                    <input placeholder="Senha" class="inputs required" oninput="mainPasswordValidate()" type="password" name="senha" value="<?php echo $senha; ?>">
+                    <input placeholder="Senha" class="inputs required" oninput="validarSenha()" type="password" name="senha" value="<?php echo $senha; ?>">
                     <span class="span-required" >Digite uma senha com no mínimo 8 caracteres</span>
                   </div>
                   <div class="form-group">
-                    <input placeholder="Confirme a senha" class="inputs required" oninput="comparePassword()" type="password" name="senha">
+                    <input placeholder="Confirme a senha" class="inputs required" oninput="compararSenha()" type="password" name="senha">
                     <span class="span-required" >Senhas devem ser compatíveis</span>
                   </div>
               

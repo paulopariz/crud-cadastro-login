@@ -50,23 +50,18 @@ nav{
         }
       }
 
+#signUpNav{
+    color: #4461F2;
+}
+
 #signUpNav::before{
     content: '';
     position: absolute;
     background-color: #4461F2;
     width: 65px;
     height: 2px;
-    margin-top: 35px;
-    margin-left: 15px;
+    margin-top: 28px;
 }
-#signUpNav a{
-    color: #4461F2;
-}
-
-#signUpNav:hover{
-    background-color: rgba(242, 239, 239, 0.293);
-}
-
 ul{
     gap: 20px;
 }
@@ -77,7 +72,7 @@ ul{
 }
 
 .nav:nth-child(2){
-    margin-left: 400px;
+    margin-left: 388px;
     font-weight: 500;
 }
 
@@ -312,17 +307,11 @@ body.dark{
 .dark .label{
     background-color: white;
 }
-
-.dark #signUpNav a{
-    color: #14162E;
-}
-
 .dark .nav-link:hover{
     color: #4461F2;
 }
-
-.dark #signUpNav{
-    color: white;
+.dark #signUpNav :hover{
+    background-color: transparent !important;
 }
 
 
@@ -436,10 +425,6 @@ body.dark{
 }
 
 
-.sucesso{
-    width: 200px;
-    height: 100px;
-    padding: 20px;
-    background-color: green;
-    display: none;
-}
+.swal-overlay {
+    background-color: rgba(43, 165, 137, 0.45);
+  }

@@ -39,7 +39,10 @@
     <link rel="stylesheet" href="style.css">
 
     <!--icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">   
+
+    <!--alert!-->    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
  
@@ -63,8 +66,8 @@
               <li class="nav-item" >
                 <a class="nav-link" id="logInNav" href="#">Sign in</a>
               </li>
-              <li class="nav-item" id="signUpNav">
-                <a class="nav-link" href="cadastro.php" target="_blank">Sign up</a>
+              <li class="nav-item">
+                <a class="nav-link" id="signUpNav" href="cadastro.php" target="_blank">Sign up</a>
               </li>
               <div>
                 <input type="checkbox" class="checkbox x2" id="chk" />
@@ -100,28 +103,28 @@
 
             <form id="form" action="cadastro.php" method="POST">
             <div class="form-group">
-                  <input type="text" placeholder="Name" name="nome" class="inputs required" oninput="nameValidate()" id="input_nome" value="<?php echo $nome; ?>">  
+                  <input type="text" placeholder="Name" name="nome" class="inputs required" oninput="validarName()" id="input_nome" value="<?php echo $nome; ?>">  
                   <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>            
                 </div>
                 <div class="form-group">
-                  <input class="inputs required" placeholder="E-mail" oninput="emailValidate()" type="email" name="email" value="<?php echo $email; ?>">
-                  <span class="span-required" >Digite um email válido</span>           
+                  <input class="inputs required" placeholder="E-mail" oninput="validarEmail()" type="email" name="email" value="<?php echo $email; ?>">
+                  <span class="span-required" >E-mail inválido</span>           
                 </div>
                 <div class="form-group">
-                  <label for="phone"><input class="inputs required" placeholder="Phone" oninput="telValidate()" type="tel" name="telefone" value="<?php echo $telefone; ?>"></label>
-                  <span class="span-required" >Digite um número de telefone válido</span>           
+                  <label for="phone"><input class="inputs required" placeholder="Phone" oninput="validarTel()" type="tel" name="telefone" value="<?php echo $telefone; ?>"></label>
+                  <span class="span-required">Telefone inválido</span>           
   
   
                 </div> 
                 <div class="form-group">
-                  <input class="inputs required" placeholder="Password" oninput="mainPasswordValidate()" type="password" name="senha" value="<?php echo $senha; ?>"> 
-                  <span class="span-required" >Digite uma senha com no mínimo 8 caracteres</span>           
+                  <input class="inputs required" placeholder="Password" oninput="validarSenha()" type="password" name="senha" value="<?php echo $senha; ?>"> 
+                  <span class="span-required">A senha deve ter no mínimo 8 caracteres</span>           
                
                 </div>
   
                 <div class="form-group">
-                  <input class="inputs required" placeholder="Confirm password" oninput="comparePassword()" type="password" name="senha">    
-                  <span class="span-required">Senhas devem ser compatíveis</span>           
+                  <input class="inputs required" placeholder="Confirm password" oninput="compararSenha()" type="password" name="senha">    
+                  <span class="span-required">Senhas não correspondem</span>           
             
                 </div>
   
