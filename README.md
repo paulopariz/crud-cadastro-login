@@ -15,3 +15,30 @@ https://user-images.githubusercontent.com/111146928/200232794-a3a7ffab-8e8b-4ea0
 - CSS
 - MySQL
 - Bootstrap
+
+### Validação:
+- Nome: No mínimo 3 caracteres
+- Email Regex: /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+- Telefone: No mínimo 11 caracteres
+- Senha: No mínimo 8 caracteres
+- Confirmar senha: Senhas devem ser compatíveis
+
+### Banco de dados MySQL:
+- Nome do banco: CRUD
+- Nome da tabela: tb_cadastros
+
+### Clone do repositório:
+
+- Instale GIT no seu sistema <a href="https://git-scm.com/downloads">AQUI</a>
+
+```bash
+$ git config --global user.name "seu nome"
+```
+
+```bash
+$ git config --global user.email seuemail@example.com
+```
+
+```bash
+$ git clone https://github.com/paulopariz/crud-cadastro-login.git
+```
